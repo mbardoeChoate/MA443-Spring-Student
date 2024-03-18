@@ -1,0 +1,14 @@
+---
+title: "Type 1 and Type 2 Error"
+author: "Matthew Bardoe"
+date: "2024-03-11"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Type 1 and Type 2 Error
+
+TK

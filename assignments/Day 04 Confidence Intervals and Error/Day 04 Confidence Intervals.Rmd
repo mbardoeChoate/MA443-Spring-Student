@@ -1,0 +1,143 @@
+---
+title: "Confidence intervals of the mean"
+author: "Matthew Bardoe & Carey Kopeikin"
+date: "1/14/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# What you will learn
+
+-   How to apply the Central Limit Theorem to estimate means
+-   How to construct a confidence interval
+-   How to evaluate new information in light of previously calculated information
+-   The difference between the "Confident" and "Probability"
+
+Reminders on terminology:
+
+*Population* - The whole group of individuals we are interested in finding the mean of.
+
+*Sampling distribution* - What we imagine would happen if we chose every possible sample of some predetermined size, $n$ and calculated the mean of each one.
+
+# The next step with the Central Limit Theorem
+
+The Central Limit Theorem is probably the most powerful statistics result. It is an amazing magic trick that turns any distribution into a Normal distribution. This is incredibly powerful!
+
+What this means is that if we want to find the mean of population then we don't have to calculate the mean of the entire population. Instead we can take a random sample of at least 30 individuals, then calculate that mean. It is very likely to be close to the true mean and because we know the shape and standard deviation of the sampling distribution we can do calculations to determine a size that is likely to define how far our sample mean could be from the true mean.
+
+Let's see how it is done...
+
+## How to construct a confidence interval
+
+Let's start like we did last time by creating a random list of numbers that will be our population. Call this vector `population.distribution`
+
+```{r}
+
+
+
+
+
+```
+
+Now don't calculate anything about it right now. We should imagine that there is nothing that we know about it.
+
+Now sample create a single sample of size 30 from this population. When you do this you should imagine that you are randomly sampling from the population of interest. If it is people maybe you are using a random phone number generator. If it is frogs in a pond you are have broken down a map of the pond into equal sections and you use a random number generator to determine where you try to catch frogs.
+
+Call your vector that is a sample of thirty `sample.of.30`.
+
+```{r}
+
+
+
+
+```
+
+*Question 1: Is this a "representative sample" of the population?*
+
+Calculate the mean of `sample.of.30`. Call it `mean.of.30`
+
+```{r}
+
+
+```
+
+*Question 2: Do you think that this a close to the true mean of the whole population? About how close? Take a guess?*
+
+Calculate the standard deviation of `sample.of.30`, call it `sd.of.sample`
+
+```{r}
+
+
+```
+
+*Question 2: Do you think that this a close to the true standard deviation of the whole population? About how close? Take a guess?*
+
+Now `sd.of.sample` explains how far apart the individuals in our sample are. We are interested in how far apart the different means we could get from samples of size of thirty are. This will help us get a sense about how far away `mean.of.30` might be from the true population mean. The Central Limit Theorem tells us that the Normal model that best approximates the sampling distribution has a mean that is equal to the population mean and a standard deviation that is equal to the standard deviation of the population divided by the square root of the sample size.
+
+$$\sigma_{\rm{sampling}}=\frac{\sigma_{\rm{population}}}{\sqrt{n}}$$ 
+
+We don't know the population standard deviation, but we have a pretty good guess from our sample. We will use that here. (*Warning:* This is where we are deviating from some acceptable statistical practice here. There is a way to compensate for the fact that we are using an estimate for the standard deviation, but the results aren't too different if our samples are at least 30.)
+
+Create the standard deviation of the sampling distribution:
+
+```{r}
+
+sd.of.sampling <- ?????/ sqrt( ????? )
+
+```
+
+`sd.of.sampling` is how far a sample mean is on average from the true mean.
+
+*Question 3: Should our estimate for how far '''mean.of.sample''' is from the population mean be more or less than '''sd.of.sampling?'''*
+
+It would be good if our estimate for our error made it so that the true mean was less than that distance away 95% of the time (95% is the standard for statistics). Luckily, we know that the sampling distribution is Normal so we can use information about the normal distribution to find out how many standard deviations we need to be encompass 95% of the readings. We can use `qnorm` to determine the distance we need to be away.
+
+
+```{r}
+qnorm(.975, mean=0, sd=1)
+```
+
+This tells us how many standard deviations we need to move away to encompass the middle 95%. Use this number: 1.96 as a multiplier to your sampling standard deviation every time to find the error.
+
+```{r}
+margin.of.error <- 1.96 * sd.of.sampling
+```
+
+
+With that we can construct our 95% confidence interval:
+
+```{r}
+upper.bound <- mean.of.sample + margin.of.error
+lower.bound <- mean.of.sample - margin.of.error
+upper.bound
+lower.bound
+
+```
+
+Now calculate the population mean and see if it is in the confidence interval.
+
+```{r}
+
+```
+
+*Question 4: If your population mean is not in the confidence interval does that mean you definitely did something wrong?*
+
+Steps to construct a confidence interval.
+
+-   Construct a random sample
+-   Calculate the mean, this your estimate for the true population
+-   Calculate the standard deviation of the sample
+-   Use that sample standard deviation to calculate how much different means vary by the equation:
+
+$$sd_{\rm{sampling}}=\frac{sd_{\rm{sample}}}{\sqrt{n}}$$
+
+-   Calculate the margin of error by 1.96 \* $sd_{sampling}$
+
+The confidence interval is your estimate plus or minus the error.
+
+\#Practice 1:
+
+Read in the dataset 'Vocab.csv'. Create a sample of 50 values from the vocabulary field. Use that sample to create a 95% confidence interval for the mean vocabulary score. Does your confidence interval contain the true mean? More about this dataset can be found at <http://vincentarelbundock.github.io/Rdatasets/doc/carData/Vocab.html>.

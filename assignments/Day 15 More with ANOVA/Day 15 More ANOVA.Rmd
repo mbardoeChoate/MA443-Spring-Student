@@ -1,0 +1,14 @@
+---
+title: "More ANOVA"
+author: "Matthew Bardoe"
+date: "3/11/2024"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error=TRUE)
+```
+
+## What you will learn
+
+TK
