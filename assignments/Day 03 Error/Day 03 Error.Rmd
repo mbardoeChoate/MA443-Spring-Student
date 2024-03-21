@@ -11,4 +11,114 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Type 1 and Type 2 Error
 
-TK
+### Type 1 Error
+
+Hypothesis testing is the general method for proving things in science and social science. It assumes some truth, then gathers evidence, then evaluates the evidence in comparisons to our hypothesis. The null hypothesis is the default assumption that there is no effect or no difference. The alternative hypothesis is the opposite of the null hypothesis.
+
+But this procedure can be wrong. And it can be wrong in two different ways. The first way is called a Type 1 error. This is when we reject the null hypothesis when it is actually true. This is also known as a **false positive**. We can control the probability of making a Type 1 error by setting the significance level of our test. The significance level or **alpha value** is the probability of making a Type 1 error. It is usually set at 0.05, but it can be set at any level. The lower the significance level, the less likely we are to make a Type 1 error.
+
+### Type 2 Error
+
+The second way that hypothesis testing can be wrong is called a Type 2 error. This is when we fail to reject the null hypothesis when it is actually false. This is also known as a **false negative**.  We cannot control the probability of making a Type 2 error. The probability of making a Type 2 error is called **beta**. The probability of not making a Type 2 error is called **power**. The power of a test is the probability of rejecting the null hypothesis when it is actually false. The power of a test is equal to 1 minus the probability of making a Type 2 error. In general, we like the power of a test to be at least 0.80, but it can be set at any level. The higher the power, the less likely we are to make a Type 2 error.
+
+#### Things that effect the power of a Test
+
+1. Sample Size - The larger the sample size, the more likely we are to reject the null hypothesis when it is actually false.
+
+2. Effect Size - The larger the effect size, the more likely we are to reject the null hypothesis when it is actually false.
+
+3. Significance Level - The larger the significance level, the more likely we are to reject the null hypothesis when it is actually false.
+
+4. Variability - The less variability in the data, the more likely we are to reject the null hypothesis when it is actually false.
+
+
+### Conclusion
+
+In conclusion, hypothesis testing can be wrong in two different ways. The first way is called a Type 1 error. This is when we reject the null hypothesis when it is actually true. The second way is called a Type 2 error. This is when we fail to reject the null hypothesis when it is actually false. We can control the probability of making a Type 1 error by setting the significance level of our test. We cannot control the probability of making a Type 2 error. The probability of not making a Type 2 error is called power. The power of a test is the probability of rejecting the null hypothesis when it is actually false. The power of a test is equal to 1 minus the probability of making a Type 2 error. In general, we like the power of a test to be at least 0.80, but it can be set at any level. The higher the power, the less likely we are to make a Type 2 error.
+
+### Example problems
+
+Multiple Choice Problems:
+
+
+1. A medical test incorrectly indicates that a healthy person has a disease. Is this a:
+   - [ ] Type I error
+   - [ ] Type II error
+   - [ ] Neither Type I nor Type II error
+
+2. A factory rejects a batch of light bulbs, believing they are defective, but they are actually fine. Is this a:
+   - [ ] Type I error
+   - [ ] Type II error
+   - [ ] Neither Type I nor Type II error
+
+3. In a criminal trial, an innocent person is wrongly convicted. Is this a:
+   - [ ] Type I error
+   - [ ] Type II error
+   - [ ] Neither Type I nor Type II error
+
+4. A researcher fails to detect a significant effect in a study when it truly exists. Is this a:
+   - [ ] Type I error
+   - [ ] Type II error
+   - [ ] Neither Type I nor Type II error
+
+5. A marketing campaign claims that a new product increases sales, but there's no evidence to support this. Is this a:
+   - [ ] Type I error
+   - [ ] Type II error
+   - [ ] Neither Type I nor Type II error
+
+6. A jury acquits a guilty defendant in a criminal trial. Is this a:
+   - [ ] Type I error
+   - [ ] Type II error
+   - [ ] Neither Type I nor Type II error
+
+7. A quality control process incorrectly approves a defective product for sale. Is this a:
+   - [ ] Type I error
+   - [ ] Type II error
+   - [ ] Neither Type I nor Type II error
+
+8. A statistical test incorrectly rejects the null hypothesis when it's true. Is this a:
+   - [ ] Type I error
+   - [ ] Type II error
+   - [ ] Neither Type I nor Type II error
+
+9. A researcher wants to ensure that their study has high power. Which error are they trying to minimize?
+    - [ ] Type I error
+    - [ ] Type II error
+    - [ ] Neither Type I nor Type II error
+
+10. A diagnostic test for a rare disease mistakenly identifies a healthy person as having the disease. Is this a:
+    - [ ] Type I error
+    - [ ] Type II error
+    - [ ] Neither Type I nor Type II error
+
+11. A fire alarm system fails to detect a real fire. Is this a:
+    - [ ] Type I error
+    - [ ] Type II error
+    - [ ] Neither Type I nor Type II error
+
+
+1. A researcher is testing a new drug. The null hypothesis is that the drug has no effect. The alternative hypothesis is that the drug has an effect. The researcher sets the significance level at 0.05. The researcher finds a p-value of 0.03. What is the probability of making a Type 1 error?
+
+
+
+
+
+
+2. A researcher is testing a new drug. The null hypothesis is that the drug has no effect. The alternative hypothesis is that the drug has an effect. The researcher sets the significance level at 0.05. The researcher finds a p-value of 0.03. 
+
+
+
+
+
+
+3. Power Calculation: A researcher is designing a study to compare two treatments for a specific medical condition. How does increasing the sample size affect the power of the test? Explain why having sufficient power is crucial.
+
+
+
+
+
+4. Power Calculation: A researcher is designing a study to compare two treatments for a specific medical condition. Explain why a small effect size makes it difficult to have a test with a lot of power? Explain why having sufficient power is crucial.
+
+
+
+
