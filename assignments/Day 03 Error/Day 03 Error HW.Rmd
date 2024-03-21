@@ -19,6 +19,7 @@ The csv ```../../data/get_it_dunn_run.csv``` contains information about the Get 
 2. The planners of the run expected that 85% of those running would be doing the 5k but in reality it was closer to 79%. Could they just have gotten unlucky or were the numbers significantly different than what was expected?
 
 
+
 a) Write appropriate hypotheses.
 
 b) Check the assumptions and conditions.
@@ -36,8 +37,6 @@ g) What is a type I error in this context?
 h) What is a type II error in this context?
 
 i) Which is worse in this context?
-
-j) Based on your answer to part i) is it better to use an alpha level of .1 or .001.
 
 
 
