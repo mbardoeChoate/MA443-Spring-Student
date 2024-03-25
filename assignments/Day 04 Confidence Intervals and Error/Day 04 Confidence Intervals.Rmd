@@ -22,7 +22,7 @@ Reminders on terminology:
 
 *Sampling distribution* - What we imagine would happen if we chose every possible sample of some predetermined size, $n$ and calculated the mean of each one.
 
-# The next step with the Central Limit Theorem
+## Confidence Intervals
 
 The Central Limit Theorem is probably the most powerful statistics result. It is an amazing magic trick that turns any distribution into a Normal distribution. This is incredibly powerful!
 
@@ -30,9 +30,9 @@ What this means is that if we want to find the mean of population then we don't 
 
 Let's see how it is done...
 
-## How to construct a confidence interval
+### How to construct a confidence interval
 
-Let's start like we did last time by creating a random list of numbers that will be our population. Call this vector `population.distribution`
+Let's start by creating a random list of numbers that will be our population. Call this vector `population.distribution`
 
 ```{r}
 
@@ -138,6 +138,25 @@ $$sd_{\rm{sampling}}=\frac{sd_{\rm{sample}}}{\sqrt{n}}$$
 
 The confidence interval is your estimate plus or minus the error.
 
-\#Practice 1:
+### Practice 1:
 
-Read in the dataset 'Vocab.csv'. Create a sample of 50 values from the vocabulary field. Use that sample to create a 95% confidence interval for the mean vocabulary score. Does your confidence interval contain the true mean? More about this dataset can be found at <http://vincentarelbundock.github.io/Rdatasets/doc/carData/Vocab.html>.
+Read in the dataset '../../data/Vocab.csv'. Create a sample of 50 values from the vocabulary field. Use that sample to create a 95% confidence interval for the mean vocabulary score. Does your confidence interval contain the true mean? More about this dataset can be found at <http://vincentarelbundock.github.io/Rdatasets/doc/carData/Vocab.html>.
+
+```{r}
+vocab <- read.csv('../../data/Vocab.csv')
+```
+
+
+### What does Confident mean?
+
+What is the chance that the mean is in the confidence interval? Well this is really the wrong question, because it is not a random event. The mean is either in the confidence interval or it is not. It is not like flipping a coin where there is a 50% chance of heads. The mean is either in the interval or it is not. The confidence interval is a statement about the process that we used to create the interval. If we were to repeat the process of creating a confidence interval many times then 95% of the time the true mean would be in the interval. This is a statement about the process, not about the individual interval.
+
+So that is why we use the word *confidence* instead of *probability*. We are confident that the process we used to create the interval will work 95% of the time.
+
+At the end of the process of creating a confidence interval we can say that "We are 95% confident that the true mean is in the interval". This is a statement about the process, not about the individual interval.
+
+### Practice 2:
+
+Read in the dataset '../../data/iris.csv'. Create a sample of 50 values from the Sepal.Length field. Use that sample to create a 95% confidence interval for the mean Sepal.Length. Does your confidence interval contain the true mean? More about this dataset can be found at <http://vincentarelbundock.github.io/Rdatasets/doc/datasets/iris.html>.
+
+
