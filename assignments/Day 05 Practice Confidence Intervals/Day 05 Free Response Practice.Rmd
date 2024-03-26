@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE, error=TRUE)
 
 2. Explain What a Type 1 Error is and how it occurs in Hypothesis Testing.
 
-3. How does the significance level (Alpha) influence the occurrence of Type 1 and Type 2 Errors?
+3. How does the significance level (Alpha, which we generally make 0.05) influence the occurrence of Type 1 and Type 2 Errors?
 
 4. Discuss the Role of sample size in minimizing Type 1 and Type 2 Errors.
 
