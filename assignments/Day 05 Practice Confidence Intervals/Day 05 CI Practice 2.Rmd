@@ -1,7 +1,7 @@
 ---
-title: "Day 06 Review 2 "
+title: "Day 05 Review"
 author: "Carey Kopeikin"
-date: "3/21/2022"
+date: "3/21/2022 rev 3/25/2024"
 output: pdf_document
 ---
  
@@ -11,42 +11,30 @@ knitr::opts_chunk$set(echo = TRUE, error=TRUE)
 
 
 
-1. A study in 1994 examined dogs to determine whether there is an increased risk of cancer in dogs that are exposed to the herbicide 2,4-Dichlorophenoxyacetic acid (2,4-D). The results of the dogs who were exposed are in ```../../data/cancer_in_dogs1.csv```. In general 32% of dogs who are not exposed to the herbicide develop cancer. 
+1. The CEO of Burger King is interested in expanding the business to the Northwest Arizona. He does a survey of the people in that area, of people's favorite burger restaurants. If he finds that more than 8% of people like "Other", he will expand the business to the Northwest Arizona. The survey data can be found at "```"../../data/burger.csv"
+
+
+
 
 a) Write appropriate hypotheses.
 
-b) What is a type I error in this context? Explain the ramifications of that error.
 
-c) What is a type II error in this context? Explain the ramifications of that error.
 
-d) Which is worse in this context?
-
-e) Based on your answer to part d) is it better to use an alpha level of .05 or .01.
-
-f) Perform the test and find the p-value using the alpha you selected in part e.
-
-g) Make a graph
-
-h) State your conclusion.
+b) Make a graph
 
 
 
+c) Perform the test and find the p-value.
 
-2. Californians love there In-N-Out Burgers. It is so popular that your friend from California states that 70% of Californians would say In-N-Out makes the best burgers. You think it is less and Collect a survey of 500 respondents. The file ```../../data/burger.csv``` contains the results. We have information on their gender and their favorite burger joint. Set up an appropriate hypothesis test to see who wins the bet? 
 
-a) Write appropriate hypotheses.
 
-b) What is a type I error in this context? Explain the ramifications of that error.
+d) State your conclusion.
 
-c) What is a type II error in this context? Explain the ramifications of that error.
 
-d) Which is worse in this context?
+2. I would like to determine the average number of stars that a Ramen Brand would get. In the file, "../../data/Ramen.Sample.csv", there is a sample of 150 Ramen Brands and the number of stars that they received. Use that sample to create a 95% confidence interval for the true mean of stars for a Ramen Brand.
 
-e) Based on your answer to part d) is it better to use an alpha level of .05 or .01.
 
-f) Perform the test and find the p-value using the alpha you selected in part e.
 
-g) Make a graph
 
-h) State your conclusion.
+
 

@@ -1,0 +1,27 @@
+---
+title: "Free Response Questions Review"
+author: "Matthew Bardoe"
+date: "3/26/24"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error=TRUE)
+```
+
+## Free Response Questions
+
+(On the real test there will be fewer of these questions.)
+
+1. What would be the Null Hypothesis if the government is interested in determining if a law against texting while driving has reduced the number of accidents?
+
+2. Explain What a Type 1 Error is and how it occurs in Hypothesis Testing.
+
+3. How does the significance level (Alpha) influence the occurrence of Type 1 and Type 2 Errors?
+
+4. Discuss the Role of sample size in minimizing Type 1 and Type 2 Errors.
+
+5. Explain what is wrong with the statement that a 95% confidence interval means that there is a 95% chance that the true population parameter is in the interval.
+
+6. A study is conducted to determine if a marketing campaign has increased sales. Many years later, it is determined that the study ended up in a type 1 error. What happened? What could have been done to prevent this?
+
